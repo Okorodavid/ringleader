@@ -1,22 +1,25 @@
 # Submission guide
 
+- **Public repo:** https://github.com/Okorodavid/ringleader
+- **Live deployment:** https://ringleader-six.vercel.app (Vercel Hobby, free; FalkorDB Cloud free tier)
+
 Deadline: 18 October 2026, 11:59 PM IST. Track entered: **Track 01, Agents That Act on Connected Data**.
 
 ## What the submission form needs
 
 | Requirement | Where it is |
 |---|---|
-| Public source repository | Push this `ringleader/` folder to a public GitHub repo (see below) |
+| Public source repository | https://github.com/Okorodavid/ringleader |
 | README with setup instructions and graph data model | `README.md`, sections Setup and Graph data model |
 | The Cypher queries the product depends on | `README.md`, section The Cypher the product depends on (9 queries) |
 | Demo video | Record with the script below, 2 to 3 minutes |
-| Live deployment or complete local setup | Local setup is in README; see Deploy below for a free host |
+| Live deployment or complete local setup | https://ringleader-six.vercel.app (live); local setup is in README |
 | Track(s) entered | Track 01 |
 | AI-use disclosure | `README.md`, section AI-use disclosure |
 
 ## Push to GitHub (free)
 
-From the `ringleader` folder:
+Done: https://github.com/Okorodavid/ringleader. The steps that were run, from the `ringleader` folder:
 
 ```bash
 git init
@@ -30,7 +33,13 @@ gh repo create ringleader --public --source . --push
 
 ## Deploy for free (optional, strengthens the entry)
 
-Render, Railway and Fly all run a FastAPI app on a free plan. Build command `pip install -r requirements.txt`,
+Done on Vercel: https://ringleader-six.vercel.app. Vercel's FastAPI preset picks up `app/main.py` through
+`api/index.py`; `.python-version` pins Python 3.12. Imports from GitHub, with the `FALKORDB_*`, `PROVIDER` and
+`GEMINI_*` variables from `.env` set in the project's Environment Variables (secrets pasted by hand, never
+committed). Each push to `main` redeploys. `/api/health` reports the FalkorDB connection state and, on failure,
+the error, so a wrong username or password shows up there.
+
+Render, Railway and Fly also run a FastAPI app on a free plan (`render.yaml` is a ready blueprint). Build command `pip install -r requirements.txt`,
 start command `uvicorn app.main:app --host 0.0.0.0 --port $PORT`, and set the `FALKORDB_*`, `PROVIDER`
 and `GEMINI_*` variables from your `.env` in the host's environment settings. Run `python -m app.seed`
 once from your machine; the cloud graph is shared.
