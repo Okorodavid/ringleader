@@ -42,11 +42,17 @@ def graph(name: str | None = None) -> Graph:
     return connect().select_graph(name or settings.graph_name)
 
 
+last_error: str | None = None
+
+
 def ping() -> bool:
+    global last_error
     try:
         connect().connection.ping()
+        last_error = None
         return True
-    except Exception:  # noqa: BLE001 - any failure means not reachable
+    except Exception as exc:  # noqa: BLE001 - any failure means not reachable
+        last_error = f"{type(exc).__name__}: {exc}"[:300]
         return False
 
 

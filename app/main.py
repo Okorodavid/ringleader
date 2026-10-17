@@ -37,8 +37,13 @@ class SeedBody(BaseModel):
 @app.get("/api/health")
 def health() -> dict[str, Any]:
     ok = db.ping()
-    return {"ok": ok, "graph": settings.graph_name, "provider": settings.provider,
-            "gemini_configured": bool(settings.gemini_api_key), "host": settings.falkordb_host}
+    out = {"ok": ok, "graph": settings.graph_name, "provider": settings.provider,
+           "gemini_configured": bool(settings.gemini_api_key), "host": settings.falkordb_host,
+           "port": settings.falkordb_port, "ssl": settings.falkordb_ssl,
+           "username_set": bool(settings.falkordb_username), "password_set": bool(settings.falkordb_password)}
+    if not ok:
+        out["error"] = db.last_error  # connection failure reason, never the credentials themselves
+    return out
 
 
 @app.get("/api/stats")
