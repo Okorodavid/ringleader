@@ -1,0 +1,269 @@
+[
+ {
+  "id": "ring_alpha_m0",
+  "seed": "acc_0376",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0376",
+   "acc_0377",
+   "acc_0378",
+   "acc_0379",
+   "acc_0380",
+   "acc_0381",
+   "acc_0382",
+   "acc_0383",
+   "acc_0384",
+   "acc_0385"
+  ]
+ },
+ {
+  "id": "ring_alpha_m4",
+  "seed": "acc_0380",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0376",
+   "acc_0377",
+   "acc_0378",
+   "acc_0379",
+   "acc_0380",
+   "acc_0381",
+   "acc_0382",
+   "acc_0383",
+   "acc_0384",
+   "acc_0385"
+  ]
+ },
+ {
+  "id": "ring_alpha_cashout",
+  "seed": "acc_0385",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0376",
+   "acc_0377",
+   "acc_0378",
+   "acc_0379",
+   "acc_0380",
+   "acc_0381",
+   "acc_0382",
+   "acc_0383",
+   "acc_0384",
+   "acc_0385"
+  ]
+ },
+ {
+  "id": "ring_bravo_m0",
+  "seed": "acc_0386",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0386",
+   "acc_0387",
+   "acc_0388",
+   "acc_0389",
+   "acc_0390",
+   "acc_0391",
+   "acc_0392"
+  ]
+ },
+ {
+  "id": "ring_bravo_m3",
+  "seed": "acc_0389",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0386",
+   "acc_0387",
+   "acc_0388",
+   "acc_0389",
+   "acc_0390",
+   "acc_0391",
+   "acc_0392"
+  ]
+ },
+ {
+  "id": "ring_bravo_cashout",
+  "seed": "acc_0392",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0386",
+   "acc_0387",
+   "acc_0388",
+   "acc_0389",
+   "acc_0390",
+   "acc_0391",
+   "acc_0392"
+  ]
+ },
+ {
+  "id": "ring_charlie_m0",
+  "seed": "acc_0393",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0393",
+   "acc_0394",
+   "acc_0395",
+   "acc_0396",
+   "acc_0397",
+   "acc_0398",
+   "acc_0399",
+   "acc_0400",
+   "acc_0401",
+   "acc_0402",
+   "acc_0403",
+   "acc_0404",
+   "acc_0405"
+  ]
+ },
+ {
+  "id": "ring_charlie_m6",
+  "seed": "acc_0399",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0393",
+   "acc_0394",
+   "acc_0395",
+   "acc_0396",
+   "acc_0397",
+   "acc_0398",
+   "acc_0399",
+   "acc_0400",
+   "acc_0401",
+   "acc_0402",
+   "acc_0403",
+   "acc_0404",
+   "acc_0405"
+  ]
+ },
+ {
+  "id": "ring_charlie_cashout",
+  "seed": "acc_0405",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0393",
+   "acc_0394",
+   "acc_0395",
+   "acc_0396",
+   "acc_0397",
+   "acc_0398",
+   "acc_0399",
+   "acc_0400",
+   "acc_0401",
+   "acc_0402",
+   "acc_0403",
+   "acc_0404",
+   "acc_0405"
+  ]
+ },
+ {
+  "id": "ring_delta_m0",
+  "seed": "acc_0406",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0406",
+   "acc_0407",
+   "acc_0408",
+   "acc_0409",
+   "acc_0410",
+   "acc_0411"
+  ]
+ },
+ {
+  "id": "ring_delta_m2",
+  "seed": "acc_0408",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0406",
+   "acc_0407",
+   "acc_0408",
+   "acc_0409",
+   "acc_0410",
+   "acc_0411"
+  ]
+ },
+ {
+  "id": "ring_delta_cashout",
+  "seed": "acc_0411",
+  "kind": "ring",
+  "expected_verdict": "ring",
+  "expected_members": [
+   "acc_0406",
+   "acc_0407",
+   "acc_0408",
+   "acc_0409",
+   "acc_0410",
+   "acc_0411"
+  ]
+ },
+ {
+  "id": "household_0",
+  "seed": "acc_0361",
+  "kind": "household",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "household_1",
+  "seed": "acc_0364",
+  "kind": "household",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "household_2",
+  "seed": "acc_0368",
+  "kind": "household",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "household_3",
+  "seed": "acc_0373",
+  "kind": "household",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "ordinary_0",
+  "seed": "acc_0001",
+  "kind": "ordinary",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "ordinary_50",
+  "seed": "acc_0051",
+  "kind": "ordinary",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "ordinary_120",
+  "seed": "acc_0121",
+  "kind": "ordinary",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "ordinary_200",
+  "seed": "acc_0201",
+  "kind": "ordinary",
+  "expected_verdict": "benign",
+  "expected_members": []
+ },
+ {
+  "id": "ordinary_300",
+  "seed": "acc_0301",
+  "kind": "ordinary",
+  "expected_verdict": "benign",
+  "expected_members": []
+ }
+]

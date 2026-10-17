@@ -1,0 +1,459 @@
+{
+ "provider": "rules",
+ "summary": {
+  "cases": 21,
+  "graph": {
+   "ring_recall": 1.0,
+   "ring_precision": 1.0,
+   "verdict_accuracy": 1.0
+  },
+  "baseline": {
+   "ring_recall": 0.886,
+   "ring_precision": 1.0,
+   "verdict_accuracy": 0.81
+  }
+ },
+ "rows": [
+  {
+   "id": "ring_alpha_m0",
+   "kind": "ring",
+   "seed": "acc_0376",
+   "expected_verdict": "ring",
+   "expected_n": 10,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 10,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 9,
+    "recall": 0.9,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_alpha_m4",
+   "kind": "ring",
+   "seed": "acc_0380",
+   "expected_verdict": "ring",
+   "expected_n": 10,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 10,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 10,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_alpha_cashout",
+   "kind": "ring",
+   "seed": "acc_0385",
+   "expected_verdict": "ring",
+   "expected_n": 10,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 10,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 7,
+    "recall": 0.7,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_bravo_m0",
+   "kind": "ring",
+   "seed": "acc_0386",
+   "expected_verdict": "ring",
+   "expected_n": 7,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 7,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 7,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_bravo_m3",
+   "kind": "ring",
+   "seed": "acc_0389",
+   "expected_verdict": "ring",
+   "expected_n": 7,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 7,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 6,
+    "recall": 0.857,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_bravo_cashout",
+   "kind": "ring",
+   "seed": "acc_0392",
+   "expected_verdict": "ring",
+   "expected_n": 7,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 7,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 5,
+    "recall": 0.714,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_charlie_m0",
+   "kind": "ring",
+   "seed": "acc_0393",
+   "expected_verdict": "ring",
+   "expected_n": 13,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 13,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 12,
+    "recall": 0.923,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_charlie_m6",
+   "kind": "ring",
+   "seed": "acc_0399",
+   "expected_verdict": "ring",
+   "expected_n": 13,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 13,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 11,
+    "recall": 0.846,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_charlie_cashout",
+   "kind": "ring",
+   "seed": "acc_0405",
+   "expected_verdict": "ring",
+   "expected_n": 13,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 13,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 9,
+    "recall": 0.692,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_delta_m0",
+   "kind": "ring",
+   "seed": "acc_0406",
+   "expected_verdict": "ring",
+   "expected_n": 6,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 6,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 6,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_delta_m2",
+   "kind": "ring",
+   "seed": "acc_0408",
+   "expected_verdict": "ring",
+   "expected_n": 6,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 6,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 6,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ring_delta_cashout",
+   "kind": "ring",
+   "seed": "acc_0411",
+   "expected_verdict": "ring",
+   "expected_n": 6,
+   "graph": {
+    "verdict": "ring",
+    "flagged_n": 6,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 6,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "household_0",
+   "kind": "household",
+   "seed": "acc_0361",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 3,
+    "recall": 0.0,
+    "precision": 0.0,
+    "verdict_ok": false
+   }
+  },
+  {
+   "id": "household_1",
+   "kind": "household",
+   "seed": "acc_0364",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 4,
+    "recall": 0.0,
+    "precision": 0.0,
+    "verdict_ok": false
+   }
+  },
+  {
+   "id": "household_2",
+   "kind": "household",
+   "seed": "acc_0368",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 5,
+    "recall": 0.0,
+    "precision": 0.0,
+    "verdict_ok": false
+   }
+  },
+  {
+   "id": "household_3",
+   "kind": "household",
+   "seed": "acc_0373",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "ring",
+    "flagged_n": 3,
+    "recall": 0.0,
+    "precision": 0.0,
+    "verdict_ok": false
+   }
+  },
+  {
+   "id": "ordinary_0",
+   "kind": "ordinary",
+   "seed": "acc_0001",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ordinary_50",
+   "kind": "ordinary",
+   "seed": "acc_0051",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ordinary_120",
+   "kind": "ordinary",
+   "seed": "acc_0121",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ordinary_200",
+   "kind": "ordinary",
+   "seed": "acc_0201",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  },
+  {
+   "id": "ordinary_300",
+   "kind": "ordinary",
+   "seed": "acc_0301",
+   "expected_verdict": "benign",
+   "expected_n": 0,
+   "graph": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   },
+   "baseline": {
+    "verdict": "benign",
+    "flagged_n": 0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "verdict_ok": true
+   }
+  }
+ ]
+}

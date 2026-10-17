@@ -1,0 +1,32 @@
+# Render Blueprint: free web service for Ringleader.
+# Secrets (FALKORDB_PASSWORD, GEMINI_API_KEY) are marked sync: false so they are
+# pasted into the Render dashboard, never committed.
+services:
+  - type: web
+    name: ringleader
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.9
+      - key: FALKORDB_HOST
+        sync: false
+      - key: FALKORDB_PORT
+        sync: false
+      - key: FALKORDB_USERNAME
+        sync: false
+      - key: FALKORDB_PASSWORD
+        sync: false
+      - key: FALKORDB_SSL
+        value: "false"
+      - key: FALKORDB_GRAPH
+        value: ringleader
+      - key: PROVIDER
+        value: rules
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-flash-latest

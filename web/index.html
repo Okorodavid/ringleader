@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ringleader</title>
+  <meta name="description" content="Fraud ring investigation desk on FalkorDB: one suspicious account in, the whole ring out, every link explained, nothing frozen without a human.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b3261e' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%231d1a16'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>Ringleader</h1>
+      <p class="tagline">One suspicious account in. The whole ring out. Every link explained.</p>
+    </div>
+    <div class="top-right">
+      <div class="health" id="health" role="status" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span><span id="health-text">Checking graph…</span>
+      </div>
+      <fieldset class="provider" id="provider">
+        <legend class="sr-only">Investigator</legend>
+        <label><input type="radio" name="provider" value="rules" checked> Rules</label>
+        <label><input type="radio" name="provider" value="gemini" id="provider-gemini"> Gemini</label>
+      </fieldset>
+    </div>
+  </header>
+
+  <main class="desk">
+    <section class="queue" aria-labelledby="queue-title">
+      <div class="panel-head">
+        <h2 id="queue-title">Queue</h2>
+        <div class="tabs" role="tablist" aria-label="Queue views">
+          <button role="tab" aria-selected="true" id="tab-alerts" data-tab="alerts">Alerts</button>
+          <button role="tab" aria-selected="false" id="tab-cases" data-tab="cases">Cases</button>
+        </div>
+      </div>
+      <form class="lookup" id="lookup" autocomplete="off">
+        <label for="lookup-id" class="sr-only">Investigate account id</label>
+        <input id="lookup-id" name="id" type="text" placeholder="Investigate any id, e.g. acc_0391" spellcheck="false">
+        <button type="submit" class="btn btn-ghost">Open</button>
+      </form>
+      <ol class="list" id="alerts" role="tabpanel" aria-labelledby="tab-alerts"></ol>
+      <ol class="list" id="cases" role="tabpanel" aria-labelledby="tab-cases" hidden></ol>
+    </section>
+
+    <section class="board" aria-labelledby="board-title">
+      <div class="panel-head">
+        <h2 id="board-title">Evidence board</h2>
+        <p class="board-sub" id="board-sub">Pick an alert to begin.</p>
+      </div>
+      <div class="canvas-wrap">
+        <svg id="canvas" role="img" aria-labelledby="canvas-desc"><desc id="canvas-desc">Graph of accounts and the identifiers they share.</desc></svg>
+        <div class="tooltip" id="tooltip" hidden></div>
+        <div class="legend" aria-label="Legend">
+          <span><i class="sw sw-account"></i>Account</span>
+          <span><i class="sw sw-flagged"></i>Flagged</span>
+          <span><i class="sw sw-cashout"></i>Cash-out</span>
+          <span><i class="sw sw-device"></i>Device</span>
+          <span><i class="sw sw-phone"></i>Phone</span>
+          <span><i class="sw sw-card"></i>Card</span>
+          <span><i class="sw sw-address"></i>Address</span>
+          <span><i class="sw sw-ip"></i>IP</span>
+          <span><i class="sw sw-money"></i>Money</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case" aria-labelledby="case-title">
+      <div class="panel-head">
+        <h2 id="case-title">Case</h2>
+        <p class="case-sub" id="case-sub">No investigation yet.</p>
+      </div>
+      <div class="case-body" id="case-body">
+        <div class="empty" id="case-empty">
+          <p>Choose an account from the queue. The investigator will walk the graph, pin each account to the board, and write up what it found. Nothing is frozen until you approve it.</p>
+        </div>
+        <section class="verdict" id="verdict" hidden aria-live="polite"></section>
+        <section class="members" id="members" hidden></section>
+        <section class="actions" id="actions" hidden></section>
+        <section class="exhibits" id="exhibits" hidden>
+          <h3>Exhibits</h3>
+          <ol id="exhibit-list"></ol>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="/static/app.js" type="module"></script>
+</body>
+</html>
