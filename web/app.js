@@ -413,4 +413,6 @@ $("lookup").addEventListener("submit", (e) => { e.preventDefault(); const id = $
 window.addEventListener("resize", () => { if (sim) { const { width, height } = svg.node().getBoundingClientRect(); sim.force("center", d3.forceCenter(width / 2, height / 2)).alpha(0.2).restart(); } });
 
 initCanvas();
-loadHealth().then((ok) => { if (ok) loadAlerts(); else $("alerts").innerHTML = `<li class="empty-row">The queue needs the graph. Start FalkorDB and reload.</li>`; });
+// Health and the queue are fetched in parallel: one round trip instead of two before the desk is usable.
+loadHealth().then((ok) => { if (!ok) $("alerts").innerHTML = `<li class="empty-row">The queue needs the graph. Start FalkorDB and reload.</li>`; });
+loadAlerts();
