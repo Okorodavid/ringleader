@@ -34,7 +34,8 @@ gh repo create ringleader --public --source . --push
 ## Deploy for free (optional, strengthens the entry)
 
 Done on Vercel: https://ringleader-six.vercel.app. Vercel's FastAPI preset picks up `app/main.py` through
-`api/index.py`; `.python-version` pins Python 3.12. Imports from GitHub, with the `FALKORDB_*`, `PROVIDER` and
+`api/index.py`; `.python-version` pins Python 3.12. `vercel.json` pins the function to Mumbai (`bom1`), next to the
+FalkorDB Cloud instance in ap-south-1: an investigation's 11 Cypher queries dropped from about 3.2 s to about 0.1 s. Imports from GitHub, with the `FALKORDB_*`, `PROVIDER` and
 `GEMINI_*` variables from `.env` set in the project's Environment Variables (secrets pasted by hand, never
 committed). Each push to `main` redeploys. `/api/health` reports the FalkorDB connection state and, on failure,
 the error, so a wrong username or password shows up there.
