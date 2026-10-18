@@ -1,7 +1,7 @@
 # Submission guide
 
 - **Public repo:** https://github.com/Okorodavid/ringleader
-- **Live deployment:** https://ringleader-six.vercel.app (Vercel Hobby, free; FalkorDB Cloud free tier)
+- **Live deployment:** https://ringleader.urelimitless.com (also https://ringleader-six.vercel.app; Vercel Hobby, free; FalkorDB Cloud free tier)
 
 Deadline: 18 October 2026, 11:59 PM IST. Track entered: **Track 01, Agents That Act on Connected Data**.
 
@@ -13,7 +13,7 @@ Deadline: 18 October 2026, 11:59 PM IST. Track entered: **Track 01, Agents That 
 | README with setup instructions and graph data model | `README.md`, sections Setup and Graph data model |
 | The Cypher queries the product depends on | `README.md`, section The Cypher the product depends on (9 queries) |
 | Demo video | Record with the script below, 2 to 3 minutes |
-| Live deployment or complete local setup | https://ringleader-six.vercel.app (live); local setup is in README |
+| Live deployment or complete local setup | https://ringleader.urelimitless.com (live); local setup is in README |
 | Track(s) entered | Track 01 |
 | AI-use disclosure | `README.md`, section AI-use disclosure |
 
@@ -33,7 +33,7 @@ gh repo create ringleader --public --source . --push
 
 ## Deploy for free (optional, strengthens the entry)
 
-Done on Vercel: https://ringleader-six.vercel.app. Vercel's FastAPI preset picks up `app/main.py` through
+Done on Vercel: https://ringleader.urelimitless.com (custom domain via Cloudflare CNAME, DNS only) and https://ringleader-six.vercel.app. Vercel's FastAPI preset picks up `app/main.py` through
 `api/index.py`; `.python-version` pins Python 3.12. `vercel.json` pins the function to Mumbai (`bom1`), next to the
 FalkorDB Cloud instance in ap-south-1: an investigation's 11 Cypher queries dropped from about 3.2 s to about 0.1 s. Imports from GitHub, with the `FALKORDB_*`, `PROVIDER` and
 `GEMINI_*` variables from `.env` set in the project's Environment Variables (secrets pasted by hand, never

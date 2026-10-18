@@ -2,7 +2,7 @@
 
 **One suspicious account in. The whole ring out. Every link explained. Nothing frozen without a human.**
 
-**Live demo:** https://ringleader-six.vercel.app · **Source:** https://github.com/Okorodavid/ringleader
+**Live demo:** https://ringleader.urelimitless.com · **Source:** https://github.com/Okorodavid/ringleader
 
 The live demo runs on Vercel's free plan against a FalkorDB Cloud free-tier instance. The first request
 after idle takes a few seconds while the function starts.
