@@ -5,3 +5,4 @@ __pycache__/
 .pytest_cache/
 data/generated/
 .unlazy/
+docs/SUBMISSION.md
